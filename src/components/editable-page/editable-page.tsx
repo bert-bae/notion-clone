@@ -76,7 +76,6 @@ const EditablePage: React.FC<EditablePageProps> = (props) => {
     const index = blocks.findIndex((b) => b.id === currentBlock.id);
     if (index > 0) {
       const updatedBlocks = [...blocks];
-      const index = updatedBlocks.findIndex((x) => x.id === currentBlock.id);
       updatedBlocks.splice(index, 1);
       setBlocks(updatedBlocks);
       setBlockInFocus(blocks[index - 1]);
